@@ -10,6 +10,7 @@
 		B849237B1DFBC19500D5E2B6 /* RBTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84923711DFBC19500D5E2B6 /* RBTree.framework */; };
 		B84923801DFBC19500D5E2B6 /* RBTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849237F1DFBC19500D5E2B6 /* RBTreeTests.swift */; };
 		B84923821DFBC19500D5E2B6 /* RBTree.h in Headers */ = {isa = PBXBuildFile; fileRef = B84923741DFBC19500D5E2B6 /* RBTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B849238C1DFBC1A100D5E2B6 /* RBTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = B849238B1DFBC1A100D5E2B6 /* RBTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B849237A1DFBC19500D5E2B6 /* RBTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RBTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B849237F1DFBC19500D5E2B6 /* RBTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBTreeTests.swift; sourceTree = "<group>"; };
 		B84923811DFBC19500D5E2B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B849238B1DFBC1A100D5E2B6 /* RBTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RBTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				B84923741DFBC19500D5E2B6 /* RBTree.h */,
+				B849238B1DFBC1A100D5E2B6 /* RBTree.swift */,
 				B84923751DFBC19500D5E2B6 /* Info.plist */,
 			);
 			path = RBTree;
@@ -149,6 +152,7 @@
 					B84923701DFBC19500D5E2B6 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 8GAQFV89E9;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					B84923791DFBC19500D5E2B6 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B849238C1DFBC1A100D5E2B6 /* RBTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		B84923861DFBC19500D5E2B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8GAQFV89E9;
@@ -334,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jasonhotsauce.RBTree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +348,7 @@
 		B84923871DFBC19500D5E2B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8GAQFV89E9;
@@ -360,6 +368,7 @@
 		B84923891DFBC19500D5E2B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8GAQFV89E9;
 				INFOPLIST_FILE = RBTreeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +381,7 @@
 		B849238A1DFBC19500D5E2B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 8GAQFV89E9;
 				INFOPLIST_FILE = RBTreeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
